@@ -1,0 +1,48 @@
+.header {
+  background: radial-gradient(ellipse at center,#fff 20%,#d5e4e8 100%);
+  height: 80px;
+
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  img {
+    margin: 15px;
+    width: 200px;
+  }
+}
+
+.main-container {
+  background-color: #d5e4e8;
+}
+
+.message-system {
+  min-width: 200px;
+  width: 100%;
+  min-height: 400px;
+  background-color: #fff;
+}
+
+.bottom-control {
+  position: fixed;
+  height: 500px;
+  width: 300px;
+  right: 10px;
+  bottom: 0px;
+
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+
+  .title {
+    /*background-color: #0078d7;*/
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    cursor: pointer;
+  }
+}

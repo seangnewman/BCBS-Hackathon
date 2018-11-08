@@ -1,0 +1,20 @@
+<div class="plan-selection">
+  <div>
+    <p>Welcome to Sleepy Bot! Sleepy Bot can answer questions related to your plan information. Interact with Sleepy Bot by simply selecting your plan below and typing in the window.</p>
+  </div>
+
+  <div>
+    To talk to Sleepy Bot, please select your plan:
+    <select (change)="selectedPlan = $event.target.value">
+      <option value="">--Select--</option>
+      <option [value]="plan" *ngFor="let plan of plans">{{plan}}</option>
+    </select>
+  </div>
+</div>
+
+<div [hidden]="!ppoSelected()">
+  <app-ppo-bot></app-ppo-bot>
+</div>
+<div [hidden]="!ppo1500Selected()">
+  <app-message-system></app-message-system>
+</div>
